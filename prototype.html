@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Room</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/RoomStyle.css">
+<link rel="stylesheet" href="css/RoomFont.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('./images/Background.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="/" class="w3-bar-item w3-button"><b>Tengri</b> Library</a>
+        </div>
+      </div>
+  <div class="w3-display-left">
+    <h1 id="001Free" class="w3-jumbo w3-animate-top w3-green w3-text-black">Free</h1>
+    <h1 id="001Not" style="display:none" class="w3-jumbo w3-animate-top w3-red w3-text-black">Not Free</h1>
+    <img src="./images/Desk2.png" alt="Desk" style="width:40">
+    <div class="w3-display-down"></div>
+        <button type="button" onclick="free1()">Not Free</button>
+        <button type="button" onclick="notFree1()">Free</button>
+    </div>
+  </div>
+
+  <div class="w3-display-middle">
+    <h1 id="002Free" class="w3-jumbo w3-animate-top w3-green w3-text-black">Free</h1>
+    <h1 id="002Not" style="display:none" class="w3-jumbo w3-animate-top w3-red w3-text-black">Not Free</h1>
+    <img src="./images/Desk2.png" alt="Desk" style="width:40">
+    <div class="w3-display-down"></div>
+        <button type="button" onclick="free2()">Not Free</button>
+        <button type="button" onclick="notFree2()">Free</button>
+    </div>
+  </div>
+
+  <div class="w3-display-right">
+    <h1 id="003Free" class="w3-jumbo w3-animate-top w3-green w3-text-black">Free</h1>
+    <h1 id="003Not" style="display:none" class="w3-jumbo w3-animate-top w3-red w3-text-black">Not Free</h1>
+    <img src="./images/Desk2.png" alt="Desk" style="width:40">
+    <div class="w3-display-down"></div>
+        <button type="button" onclick="free3()">Not Free</button>
+        <button type="button" onclick="notFree3()">Free</button>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-16">
+    <p>Powered by <a href="https://www.tengrilab.kz/" title="TENGRILAB" target="_blank" class="w3-hover-text-green">TENGRILAB</a></p>
+  </footer>
+ 
+ <script>
+    function free1() {
+      document.getElementById("001Free").style="display:none";
+      document.getElementById("001Not").style="display:yes";
+    }
+
+    function notFree1() {
+      document.getElementById("001Free").style="display:yes";
+      document.getElementById("001Not").style="display:none";
+    }
+
+    function free2() {
+      document.getElementById("002Free").style="display:none";
+      document.getElementById("002Not").style="display:yes";
+    }
+
+    function notFree2() {
+      document.getElementById("002Free").style="display:yes";
+      document.getElementById("002Not").style="display:none";
+    }
+
+    function free3() {
+      document.getElementById("003Free").style="display:none";
+      document.getElementById("003Not").style="display:yes";
+    }
+
+    function notFree3() {
+      document.getElementById("003Free").style="display:yes";
+      document.getElementById("003Not").style="display:none";
+    }
+
+</script>
+
+</body>
+</html>
