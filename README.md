@@ -1,2 +1,2 @@
 # Front-Library
-beta version for smart library web application
+beta version front for smart library web application
